@@ -3,5 +3,5 @@
 Learning REACT by building:
 
 
-![](/preview.jpg "project target)
+![](/preview.jpg)
 
