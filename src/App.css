@@ -1,38 +1,138 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  background-color: #F2F2F2;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Space Mono', monospace;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
   flex-direction: column;
+  height: fit-content;
+  width: 50%;
+  font-size: 15px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center ;
+  width: 100%;
+  font-size: 13px;
+}
+
+.nav-container h1 {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.nav-container p {
+  color: #697C9A;
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  background-color: #FEFEFE;
+  height: 4.5em;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 15px;
+}
+
+#username {
+  font-size: 1.125em;
+}
+
+#searchButton {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  color: #FFFFFF;
+  background-color: #0079FF;
+  border-radius: 10px;
+  height: 3.125em;
+  width: 6.625em;
 }
 
-.App-link {
-  color: #61dafb;
+.infoContainer {
+  display: flex;
+  background-color: #FEFEFE;
+  box-shadow: 0 1em 2em 1em rgba(70, 96, 187, 0.2);
+  height: 27em;
+  width: 100%;
+  font-size: 16px;
+  margin-top: 36px;
+  margin-bottom: 24px;
+  border-radius: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#userImage {
+  height: 120px;
+  width: 120px;
+  background-color: blue;
+  margin: 48px;
 }
+
+.userData {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 48px;
+}
+
+#userName {
+  font-size: 1.625em;
+  color: #2B3442;
+}
+
+#joinDate {
+  font-size: 0.8125em;
+  color: #697C9A;
+}
+
+#uniqueHandle {
+  color: #0079FF;
+}
+
+#userBio {
+  color: #4B6A9B;
+}
+
+.statContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  background-color: #F6F8FF;
+  border-radius: 10px;
+  margin-right: 3.5em;
+  padding: 1em 2em 1em 2em;
+}
+
+.statContainer span {
+  color: #4B6A9B;
+}
+
+.statContainer h1 {
+  color: #2B3442;
+}
+
+.contactContainer {
+  display: grid;
+  grid-template: repeat(2,1fr) / repeat(2,1fr);
+  color: #4B6A9B;
+  margin: 2.875em 0 2.875em 0;
+}
+
