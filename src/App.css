@@ -39,7 +39,7 @@ body {
   color: #697C9A;
 }
 
-.search-container {
+.search-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
