@@ -1,5 +1,5 @@
 
-let GitHubHelper = {
+export const GitHubHelper = {
     async search(username){
         return fetch(
             `https://api.github.com/users/${username}`
@@ -9,14 +9,15 @@ let GitHubHelper = {
             if(response.status === 404){
                 window.alert('User not found.');
             }
-            response.json();
+            console.log(response.json)
+            return response.json();
         })
         .then(jsonResponse => {
             return {
-                username: jsonResponse.login,
+                name: jsonResponse.name,
                 avatarUri: jsonResponse.avatar_url,
                 joinDate: jsonResponse.created_at,
-                email: jsonResponse.email,
+                username: jsonResponse.login,
                 bio: jsonResponse.bio,
                 repos: jsonResponse.public_repos,
                 followers: jsonResponse.followers,
@@ -29,4 +30,4 @@ let GitHubHelper = {
         })
     }
 }
-
+export default GitHubHelper

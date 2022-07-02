@@ -5,35 +5,45 @@ import websiteIcon from './res/icon-website.svg'
 import React from 'react'
 
 export class InfoContainer extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.formatDate = this.formatDate.bind(this);
+    }
+    formatDate(){
+        const currentDate = new Date(this.props.searchResults.joinDate);
+        const options = {day:'numeric', month:'short', year:'numeric'}
+        return currentDate.toLocaleDateString('en-GB',options);
+    }
     render(){
         return (
-            <div className="infoContainer">
-                <div id="userImage">
-                    <img src={this.props.searchResults.avaterUri} alt={`${this.props.searchResults.username}'s avatar'`} />
+            <div className="info-container">
+                <div>
+                    <img id="user-image" src={this.props.searchResults.avatarUri} alt={`${this.props.searchResults.username}'s avatar'`} />
                 </div>
-                <div className="userData">
+                <div className="user-data">
                 <span>
-                    <h1 id="userName">{this.props.searchResults.username}</h1>
-                    <p id="joinDate">{this.props.searchResults.joinDate}</p>
+                    <h1 id="userName">{this.props.searchResults.name}</h1>
+                    <p id="joinDate">{this.formatDate()}</p>
                 </span>
-                <p id="uniqueHandle">{this.props.searchResults.email}</p>
-                <p id="userBio">{this.props.searchResults.bio}</p>
-                <div className="statContainer">
-                    <span id="userRepos">Repos<br /><h1>{this.props.searchResults.repos}</h1></span>
-                    <span id="userFollowers">Followers<br /><h1>{this.props.searchResults.followers}</h1></span>
-                    <span id="usersFollowing">Following<br /><h1>{this.props.searchResults.following}</h1></span>
+                <p id="unique-handle">@{this.props.searchResults.username}</p>
+                <p id="user-bio">{this.props.searchResults.bio}</p>
+                <div className="stat-container">
+                    <span>Repos<br /><h1>{this.props.searchResults.repos}</h1></span>
+                    <span>Followers<br /><h1>{this.props.searchResults.followers}</h1></span>
+                    <span>Following<br /><h1>{this.props.searchResults.following}</h1></span>
                 </div>
-                <div className="contactContainer">
-                    <span id="userLocation">
+                <div className="contact-container">
+                    <span>
                     <img src={ locationIcon } alt="location icon" /><p>{this.props.searchResults.location}</p>
                     </span>
-                    <span id="twitterLink">
+                    <span>
                     <img src={ twitterIcon } alt="twitter icon" /><p>{this.props.searchResults.twitter}</p>
                     </span>
-                    <span id="webLink">
+                    <span>
                     <img src={ websiteIcon } alt="homepage icon" /><p>{this.props.searchResults.webpage}</p>
                     </span>
-                    <span id="userWorkplace">
+                    <span>
                     <img src={ companyIcon } alt="workplace icon" /><p>{this.props.searchResults.workplace}</p>
                     </span>
                 </div>

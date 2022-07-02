@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import SearchContainer from './SearchContainer';
+import { SearchContainer } from './SearchContainer';
 import { InfoContainer } from './InfoContainer';
 import { GitHubHelper } from './util/GithubHelper'
 
@@ -10,10 +10,10 @@ class App extends React.Component {
 
     this.state = {
       searchResults: {
-        username: "octocat",
-        avatarUri: "https://github.com/images/error/octocat_happy.gif",
+        name: "The Octocat",
+        avatarUri: "https://avatars.githubusercontent.com/u/583231?v=4",
         joinDate: "2008-01-14T04:33:35Z",
-        email: "octocat@github.com",
+        username: "octocat",
         bio: "There once was...",
         repos: 2,
         followers: 20,
@@ -23,10 +23,14 @@ class App extends React.Component {
         webpage: "https://github.com/blog",
         workplace: "GitHub",
       },
+      mode: "light",
     }
 
     this.search = this.search.bind(this);
+    this.changeMode = this.changeMode.bind(this);
   }
+
+  changeMode(){}
 
   search(username){
     console.log('Search Clicked');
@@ -39,7 +43,7 @@ class App extends React.Component {
   render() {
     return (
     <div>
-        <SearchContainer onSearch={this.search}/>
+        <SearchContainer modeChange={this.changeMode} onSearch={this.search}/>
         <InfoContainer searchResults={this.state.searchResults} />    
     </div>
   );

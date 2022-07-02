@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +13,6 @@ html {
   place-items: center;
   height: 100vh;
   width: 100vw;
-  font-family: 'Space Mono', monospace;
 }
 
 body {
@@ -19,15 +20,18 @@ body {
   flex-direction: column;
   height: fit-content;
   width: 50%;
+  min-width: fit-content;
+  font-family: 'Space Mono', monospace;
   font-size: 15px;
 }
 
 .nav-container {
   display: flex;
   justify-content: space-between;
-  align-items: center ;
+  align-items: center;
   width: 100%;
   font-size: 13px;
+  margin-bottom: 2.125em;
 }
 
 .nav-container h1 {
@@ -36,7 +40,20 @@ body {
 }
 
 .nav-container p {
+  display: flex;
+  align-items: center;
   color: #697C9A;
+  font-size: 0.85em;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+
+.nav-container svg {
+  margin-left: 1em;
+}
+
+.nav-container p:hover {
+  color: black;
 }
 
 .search-bar {
@@ -44,31 +61,47 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #FEFEFE;
+  box-shadow: 0 1em 2em -0.75em rgba(70, 96, 187, 0.2);
   height: 4.5em;
   width: 100%;
   font-size: 16px;
   border-radius: 15px;
 }
 
-#username {
-  font-size: 1.125em;
+.search-bar img {
+  margin: 0 1.5em;
 }
 
-#searchButton {
+.search-bar input {
+  font-family: 'Space Mono';
+  width: 70%;
+  font-size: 1.125em;
+  border: none;
+}
+
+.search-bar button {
   display: flex;
   justify-content: center;
   align-items: center;
   color: #FFFFFF;
+  border: none;
   background-color: #0079FF;
   border-radius: 10px;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
   height: 3.125em;
   width: 6.625em;
+  margin: 0 1.5em;
 }
 
-.infoContainer {
+#username {
+  font-size: 1.125em;
+}
+
+.info-container {
   display: flex;
   background-color: #FEFEFE;
-  box-shadow: 0 1em 2em 1em rgba(70, 96, 187, 0.2);
+  box-shadow: 0 1em 2em -0.75em rgba(70, 96, 187, 0.2);
   height: 27em;
   width: 100%;
   font-size: 16px;
@@ -77,19 +110,27 @@ body {
   border-radius: 15px;
 }
 
-#userImage {
+#user-image {
   height: 120px;
   width: 120px;
   background-color: blue;
   margin: 48px;
+  object-fit: fill;
 }
 
-.userData {
+.user-data {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
   margin-top: 48px;
+}
+
+.user-data > span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 2em;
 }
 
 #userName {
@@ -102,15 +143,17 @@ body {
   color: #697C9A;
 }
 
-#uniqueHandle {
+#unique-handle {
   color: #0079FF;
+  margin-bottom: 1.25em;
 }
 
-#userBio {
+#user-bio {
   color: #4B6A9B;
+  margin-bottom: 2em;
 }
 
-.statContainer {
+.stat-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -121,18 +164,34 @@ body {
   padding: 1em 2em 1em 2em;
 }
 
-.statContainer span {
+.stat-container span {
   color: #4B6A9B;
+  margin-left: 2em;
 }
 
-.statContainer h1 {
+.stat-container h1 {
   color: #2B3442;
 }
 
-.contactContainer {
+
+.contact-container {
   display: grid;
   grid-template: repeat(2,1fr) / repeat(2,1fr);
+  grid-gap: 1em;
   color: #4B6A9B;
   margin: 2.875em 0 2.875em 0;
+}
+
+.contact-container span {
+  display: flex;
+}
+
+.contact-container p {
+  margin-left: 20px;
+}
+
+.contact-container img {
+  height: auto;
+  width: 20px;
 }
 
