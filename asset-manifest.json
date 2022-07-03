@@ -1,22 +1,19 @@
 {
   "files": {
-    "main.css": "/FEM_githubUserSearchREACT/static/css/main.b4417d80.css",
-    "main.js": "/FEM_githubUserSearchREACT/static/js/main.c90370e5.js",
+    "main.css": "/FEM_githubUserSearchREACT/static/css/main.31a58f1f.css",
+    "main.js": "/FEM_githubUserSearchREACT/static/js/main.758b9b8e.js",
     "static/js/787.b7d4d1ca.chunk.js": "/FEM_githubUserSearchREACT/static/js/787.b7d4d1ca.chunk.js",
-    "static/media/icon-sun.svg": "/FEM_githubUserSearchREACT/static/media/icon-sun.f28a8996f9959c40bdff14d5a43c08d8.svg",
-    "static/media/icon-website.svg": "/FEM_githubUserSearchREACT/static/media/icon-website.b7923f6c1dae9717c079c60d8a5c82e5.svg",
-    "static/media/icon-company.svg": "/FEM_githubUserSearchREACT/static/media/icon-company.6f78ffb334b191c8ed54d0c2a6f7cc25.svg",
+    "static/media/icon-company.svg": "/FEM_githubUserSearchREACT/static/media/icon-company.eb5dabcda970aa536fdb3922aed89868.svg",
     "index.html": "/FEM_githubUserSearchREACT/index.html",
-    "static/media/icon-twitter.svg": "/FEM_githubUserSearchREACT/static/media/icon-twitter.f6a2a695fbb260b28a9fd67dd4179ea5.svg",
-    "static/media/icon-moon.svg": "/FEM_githubUserSearchREACT/static/media/icon-moon.cce754cec46d095fd3ce12737f38694b.svg",
+    "static/media/icon-twitter.svg": "/FEM_githubUserSearchREACT/static/media/icon-twitter.b8222a41b98d0f43ec0e3033fede9553.svg",
     "static/media/icon-search.svg": "/FEM_githubUserSearchREACT/static/media/icon-search.0cc0c98424cc75d5e1dfbb9e3abb6785.svg",
-    "static/media/icon-location.svg": "/FEM_githubUserSearchREACT/static/media/icon-location.f11c5487a9922cbad40a27e8cc1cfaee.svg",
-    "main.b4417d80.css.map": "/FEM_githubUserSearchREACT/static/css/main.b4417d80.css.map",
-    "main.c90370e5.js.map": "/FEM_githubUserSearchREACT/static/js/main.c90370e5.js.map",
+    "static/media/icon-location.svg": "/FEM_githubUserSearchREACT/static/media/icon-location.f28602fa817ffc234bc43836847caa42.svg",
+    "main.31a58f1f.css.map": "/FEM_githubUserSearchREACT/static/css/main.31a58f1f.css.map",
+    "main.758b9b8e.js.map": "/FEM_githubUserSearchREACT/static/js/main.758b9b8e.js.map",
     "787.b7d4d1ca.chunk.js.map": "/FEM_githubUserSearchREACT/static/js/787.b7d4d1ca.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4417d80.css",
-    "static/js/main.c90370e5.js"
+    "static/css/main.31a58f1f.css",
+    "static/js/main.758b9b8e.js"
   ]
 }
