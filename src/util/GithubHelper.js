@@ -5,14 +5,13 @@ export const GitHubHelper = {
             `https://api.github.com/users/${username}`
         )
         .then(response => {
-            console.log('RESPONSE RECEIVED')
             if(response.status === 404){
-                window.alert('User not found.');
+                return null;
             }
-            console.log(response.json)
             return response.json();
         })
         .then(jsonResponse => {
+            if(jsonResponse === null) return null;
             return {
                 name: jsonResponse.name,
                 avatarUri: jsonResponse.avatar_url,

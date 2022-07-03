@@ -1,0 +1,29 @@
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 13px;
+    margin-bottom: 2.125em;
+  }
+  
+  .nav-container h1 {
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--text-primary);
+  }
+  
+  .nav-container p {
+    display: flex;
+    align-items: center;
+    font-size: 0.85em;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: var(--text-secondary);
+    cursor: pointer;
+  }
+  
+  .nav-container p:hover {
+    color: var(--text-primary);
+  }

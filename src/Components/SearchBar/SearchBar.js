@@ -1,5 +1,6 @@
 import React from 'react'
-import searchIcon from './res/icon-search.svg' 
+import searchIcon from './icon-search.svg' 
+import './SearchBar.css'
 
 export class SearchBar extends React.Component {
     constructor(props) {
@@ -18,9 +19,8 @@ export class SearchBar extends React.Component {
     }
 
     handleTermChange(event) {
-        console.log(event.target.value);
         const message = event.target.value;
-        if(message === "Search GitHub username..."){
+        if(message === this.state.searchTerm){
             this.setState(
                 {searchTerm: ""}
             )
@@ -34,15 +34,16 @@ export class SearchBar extends React.Component {
 
     render() {
         return(
-            <div className="search-bar">
+            <div className="search-bar" >
                 <img src={ searchIcon } alt="magnifying glass" height="24" width="24" />
-                <input 
+                <input
                     value={this.state.searchTerm} 
                     onChange={this.handleTermChange}
                     onClick={this.handleTermChange}
-                    />
+                />
+                <p id="error-message">{this.props.error}</p>
                 <button 
-                    onClick={this.search}>Search!</button>
+                    onClick={this.search}>Search</button>
             </div>
         )
     }
