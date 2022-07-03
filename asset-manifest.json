@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/FEM_githubUserSearchREACT/static/css/main.f673acc9.css",
-    "main.js": "/FEM_githubUserSearchREACT/static/js/main.6c195cfb.js",
+    "main.js": "/FEM_githubUserSearchREACT/static/js/main.18882f7c.js",
     "static/js/787.b7d4d1ca.chunk.js": "/FEM_githubUserSearchREACT/static/js/787.b7d4d1ca.chunk.js",
     "static/media/icon-company.svg": "/FEM_githubUserSearchREACT/static/media/icon-company.eb5dabcda970aa536fdb3922aed89868.svg",
     "index.html": "/FEM_githubUserSearchREACT/index.html",
@@ -9,11 +9,11 @@
     "static/media/icon-search.svg": "/FEM_githubUserSearchREACT/static/media/icon-search.0cc0c98424cc75d5e1dfbb9e3abb6785.svg",
     "static/media/icon-location.svg": "/FEM_githubUserSearchREACT/static/media/icon-location.f28602fa817ffc234bc43836847caa42.svg",
     "main.f673acc9.css.map": "/FEM_githubUserSearchREACT/static/css/main.f673acc9.css.map",
-    "main.6c195cfb.js.map": "/FEM_githubUserSearchREACT/static/js/main.6c195cfb.js.map",
+    "main.18882f7c.js.map": "/FEM_githubUserSearchREACT/static/js/main.18882f7c.js.map",
     "787.b7d4d1ca.chunk.js.map": "/FEM_githubUserSearchREACT/static/js/787.b7d4d1ca.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f673acc9.css",
-    "static/js/main.6c195cfb.js"
+    "static/js/main.18882f7c.js"
   ]
 }
