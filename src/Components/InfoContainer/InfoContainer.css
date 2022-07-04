@@ -12,7 +12,7 @@ a:link, a:visited {
     box-shadow: 0 1em 2em -0.75em rgba(70, 96, 187, 0.2);
     min-height: 27em;
     height: fit-content;
-    width: 100%;
+    max-width: 100%;
     font-size: 16px;
     margin-top: 36px;
     margin-bottom: 24px;
@@ -67,8 +67,11 @@ a:link, a:visited {
   }
   
   #user-bio {
+    display: flex;
     color: var(--text-secondary);  
     margin-bottom: 2em;
+    margin-right: 3.5em;
+
   }
 
   .user-bottom {
@@ -85,6 +88,8 @@ a:link, a:visited {
     margin-right: 3.5em;
     padding: 1em 2em 1em 2em;
     transition: all 0.5s;
+    min-width: fit-content;
+    max-width: 100%;
   }
 
  
@@ -121,6 +126,14 @@ a:link, a:visited {
     width: 20px;
   
   }
+
+  @media only screen and (max-width: 1000px){
+    .contact-container {
+      display: flex;
+      flex-direction: column;
+      margin: 1.5em
+  }
+  }
   
   @media only screen and (max-width: 800px) {
 
@@ -147,11 +160,5 @@ a:link, a:visited {
 
     .user-bottom {
         margin-left: 0;
-    }
-
-    .contact-container {
-        display: flex;
-        flex-direction: column;
-        margin: 1.5em
     }
   }

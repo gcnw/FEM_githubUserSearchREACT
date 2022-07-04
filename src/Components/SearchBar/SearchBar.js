@@ -20,7 +20,7 @@ export class SearchBar extends React.Component {
 
     handleTermChange(event) {
         const message = event.target.value;
-        if(message === this.state.searchTerm){
+        if(message === "Search GitHub username..."){
             this.setState(
                 {searchTerm: ""}
             )
@@ -36,7 +36,11 @@ export class SearchBar extends React.Component {
         return(
             <div className="search-bar" >
                 <img src={ searchIcon } alt="magnifying glass" height="24" width="24" />
-                <input
+                <input onKeyPress={(event) => {
+                    if(event.key === "Enter"){
+                        this.search();
+                    }
+                }}
                     value={this.state.searchTerm} 
                     onChange={this.handleTermChange}
                     onClick={this.handleTermChange}

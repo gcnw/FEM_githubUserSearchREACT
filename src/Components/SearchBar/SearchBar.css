@@ -1,12 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
 .search-bar {
-  position:relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--cards);
     box-shadow: 0 1em 2em -0.75em rgba(70, 96, 187, 0.2);
     height: 4.5em;
-    width: 100%;
+    max-width: 100%;
     font-size: 16px;
     border-radius: 15px;
     transition: all 0.5s;
@@ -18,7 +24,7 @@
   
   .search-bar form {
     position: relative;
-    width: 70%;
+    width: 80%;
   }
 
   .search-bar input {
@@ -47,9 +53,10 @@
   }
 
   .search-bar p {
-    position: absolute;
-    right: 9em;
+    position: relative;
     color: #F74646;
+    text-align: right;
+    width: 100%;
     font-weight: 700;
   }
   

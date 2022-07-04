@@ -14,13 +14,14 @@
   width: 100vw;
   background-color: var(--secondary);
   transition: all 0.5s;
+  padding: 5em;
+  overflow: hidden;
 }
 
 body {
   display: flex;
   flex-direction: column;
   height: fit-content;
-  max-width: 90%;
   min-width: fit-content;
   font-family: 'Space Mono', monospace;
   font-size: 15px;
