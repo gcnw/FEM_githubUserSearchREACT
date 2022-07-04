@@ -58,6 +58,7 @@
     text-align: right;
     width: 100%;
     font-weight: 700;
+    padding-right: 0.5em;
   }
   
   @media only screen and (max-width: 800px) {
@@ -68,10 +69,5 @@
     .search-bar img {
       margin: 0 0.25em 0 1.25em;
 
-    }
-
-    .search-bar p {
-      right: 40%;
-      top: 4.75em;
     }
   }
